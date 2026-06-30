@@ -1,0 +1,84 @@
+title: "srikaya77"
+title_separator: " - "
+description: "srikaya77 — situs informasi resmi dengan blog, referensi, dan arahan ke domain utama."
+url: "https://srikaya77.agiledesigncamp.org"
+official_site: "https://serikaya77.org"
+baseurl: ""
+lang: id_ID
+timezone: Asia/Jakarta
+markdown: gfm
+remote_theme: pages-themes/midnight
+
+permalink: /blog/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .bundle/
+  - .git/
+  - README.md
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-octicons
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+logo: "/assets/images/logo.svg"
+image: "/assets/images/og-default.svg"
+
+feed:
+  path: atom.xml
+  posts_limit: 10
+
+twitter:
+  card: summary_large_image
+
+relative_links:
+  enabled: true
+  collections: true
+
+title_from_headings:
+  enabled: true
+  collections: true
+  pages: true
+
+author:
+  name: "srikaya77"
+  url: "https://srikaya77.agiledesigncamp.org"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: "/assets/images/og-default.svg"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      author: "srikaya77"
+      image: "/assets/images/og-default.svg"
+
+github:
+  is_project_page: false
